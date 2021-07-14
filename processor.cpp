@@ -1,11 +1,8 @@
 #include "processor.h"
 #include "ids.h"
 
-#include "base/source/fstreamer.h"
-#include "pluginterfaces/base/ibstream.h"
 #include "pluginterfaces/vst/ivstparameterchanges.h"
 #include "public.sdk/source/vst/vstaudioprocessoralgo.h"
-
 
 #include <math.h>
 #define PI 3.141595 //estimd
@@ -17,10 +14,8 @@ template<typename sample_type> void sin_distort(sample_type** in, sample_type** 
 {
 	for (int32 i = 0; i < channels; i++)
 	{
-		int32 samples = frames;
-		sample_type* input = (sample_type*)in[i];
-		sample_type* output = (sample_type*)out[i];
-		sample_type tmp;
+		sample_type* input = in[i];
+		sample_type* output = out[i];
 
 		for(int32 frame=0;frame<frames;++frame)
 		{
@@ -33,10 +28,8 @@ template<typename sample_type> void arctan_distort(sample_type** in, sample_type
 {
 	for (int32 i = 0; i < channels; i++)
 	{
-		int32 samples = frames;
-		sample_type* input = (sample_type*)in[i];
-		sample_type* output = (sample_type*)out[i];
-		sample_type tmp;
+		sample_type* input = in[i];
+		sample_type* output = out[i];
 
 		for(int32 frame=0;frame<frames;++frame)
 		{

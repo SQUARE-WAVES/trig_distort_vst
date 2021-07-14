@@ -1,10 +1,6 @@
 #include "controller.h"
 #include "ids.h"
 
-#include "base/source/fstreamer.h"
-#include "pluginterfaces/base/ibstream.h"
-
-
 using namespace Steinberg;
 using Steinberg::Vst::ParameterInfo;
 
@@ -19,7 +15,7 @@ tresult PLUGIN_API controller::initialize(FUnknown* context)
 		parameters.addParameter(STR16("shape"), STR16("sin/tri"),1,1.,ParameterInfo::kCanAutomate, params::Shape, 0, STR16("shape"));
 	}
 
-	return kResultTrue;
+	return result;
 }
 
 FUnknown* controller::createInstance(void*)

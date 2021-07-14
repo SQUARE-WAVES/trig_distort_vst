@@ -24,7 +24,7 @@ class processor : public Vst::AudioEffect
 	static FUnknown* createInstance (void*);
 
 	protected:
-	Vst::ParamValue gain = 0;
+	Vst::ParamValue gain = 0.25;
 	int16 shape = 0;
 
 	//this isn't from the VST class
