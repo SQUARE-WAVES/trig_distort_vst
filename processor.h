@@ -13,8 +13,6 @@ class processor : public Vst::AudioEffect
 	//these are all overrides of AudioEffect methods
 	tresult PLUGIN_API initialize(FUnknown* context);
 
-	tresult PLUGIN_API setBusArrangements (Vst::SpeakerArrangement* inputs, int32 numIns,Vst::SpeakerArrangement* outputs, int32 numOuts);
-
 	tresult PLUGIN_API setupProcessing (Vst::ProcessSetup& setup);
 	tresult PLUGIN_API setActive (TBool state);
 	tresult PLUGIN_API process (Vst::ProcessData& data);

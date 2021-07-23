@@ -9,7 +9,7 @@
 #define CONTROLLER_NAME "controller"
 #define PLUGIN_VERSION "1.0.0"
 
-BEGIN_FACTORY_DEF ("example_plugins", "www.example.com",	"nobody@example.com")
+BEGIN_FACTORY_DEF("example_plugins", "www.example.com",	"nobody@example.com")
 
 	//this is a big ol macro call
 	DEF_CLASS2

@@ -27,7 +27,7 @@ target_link_libraries(${PROJECT_NAME}
 if(SMTG_MAC)
     set(CMAKE_OSX_DEPLOYMENT_TARGET 10.12)
     smtg_set_bundle(${PROJECT_NAME}
-        BUNDLE_IDENTIFIER horse_club
+        BUNDLE_IDENTIFIER trig_distort
         INFOPLIST "${CMAKE_CURRENT_LIST_DIR}/resource/Info.plist" PREPROCESS
     )
     smtg_set_debug_executable(${PROJECT_NAME}
@@ -35,9 +35,6 @@ if(SMTG_MAC)
         "--pluginfolder;$(BUILT_PRODUCTS_DIR)"
     )
 elseif(SMTG_WIN)
-    target_sources(${PROJECT_NAME} PRIVATE 
-        resource/win32resource.rc
-    )
     if(MSVC)
         set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
     

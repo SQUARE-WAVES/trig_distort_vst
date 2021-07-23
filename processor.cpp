@@ -47,7 +47,7 @@ processor::processor()
 
 FUnknown* processor::createInstance (void*)
 {
-	return (Vst::IAudioProcessor*)new processor ();
+	return (Vst::IAudioProcessor*)new processor();
 }
 
 tresult PLUGIN_API processor::initialize(FUnknown* context)
@@ -67,17 +67,6 @@ tresult PLUGIN_API processor::initialize(FUnknown* context)
 	addAudioOutput(STR16("AudioOutput"), Vst::SpeakerArr::kStereo);
 
 	return kResultTrue;
-}
-
-tresult PLUGIN_API processor::setBusArrangements(Vst::SpeakerArrangement* inputs,int32 numIns,Vst::SpeakerArrangement* outputs,int32 numOuts)
-{
-	//so this bad boy is just 1 stereo, so quit out if it's asking for more
-	if(numIns == 1 && numOuts == 1 && inputs[0] == outputs[0])
-	{
-		return AudioEffect::setBusArrangements(inputs, numIns, outputs, numOuts);
-	}
-
-	return kResultFalse;
 }
 
 tresult PLUGIN_API processor::setupProcessing (Vst::ProcessSetup& setup)
