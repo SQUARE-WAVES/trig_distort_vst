@@ -2,7 +2,7 @@
 
 this is a lil tiny example VST3 plugin, mostly meant to show off how to get a vst plugin up and running without needing an external framework or something like that.
 
-This is more meant to be something that you can copy and edit as a starting point rather than something you should change and modify yourself. As to liscenses and such this is basically provided as-is and I make no promises that it works or that it's good or that you should use it, in fact I reccomend you don't use it and instead just look at it for educational purposes. It exists to accompany a tutorial that I'm making where I will walk through things as an explanation.
+This is more meant to be something that you can copy and edit as a starting point rather than something you should change and modify yourself. As to liscenses and such this is basically provided as-is and I make no promises that it works or that it's good or that you should use it, in fact I reccomend you don't use it and instead just look at it for educational purposes. It exists to accompany (this post)[https://serv.themysterioush.net/audio_lessons/how_to_vst3.html] where I walk through things as an explanation.
 
 # how do I build it.
 
@@ -19,4 +19,4 @@ I made the VST3 source directory an option because I don't wanna tell you where 
 I've only tested this on my mac computer, but it should in theory work find not on a mac, as most of the cmake stuff is cross-platform.
 
 # how do I learn more?
-look at the video or read up. This is really meant to be a tiny little starting point and not really teach very much.
+look at the post or read up on vst3. This is really meant to be a tiny little starting point.
