@@ -2,11 +2,11 @@
 
 this is a lil tiny example VST3 plugin, mostly meant to show off how to get a vst plugin up and running without needing an external framework or something like that.
 
-This is more meant to be something that you can copy and edit as a starting point rather than something you should change and modify yourself. As to liscenses and such this is basically provided as-is and I make no promises that it works or that it's good or that you should use it, in fact I reccomend you don't use it and instead just look at it for educational purposes. It exists to accompany (this post)[https://serv.themysterioush.net/audio_lessons/how_to_vst3.html] where I walk through things as an explanation.
+This is more meant to be something that you can copy and edit as a starting point rather than something you should change and modify yourself. As to liscenses and such this is basically provided as-is and I make no promises that it works or that it's good or that you should use it, in fact I reccomend you don't use it and instead just look at it for educational purposes. It exists to accompany [this post](https://serv.themysterioush.net/audio_lessons/how_to_vst3.html) where I walk through things as an explanation.
 
 # how do I build it.
 
-you are gonna need to get cmake, and the (vst3 sdk)[https://github.com/steinbergmedia/vst3sdk]
+you are gonna need to get cmake, and the [vst3 sdk](https://github.com/steinbergmedia/vst3sdk)
 
 then just go into the folder, make a build directory and do :
 ```
